@@ -42,8 +42,8 @@ class FormInput extends React.Component {
 export default FormInput;
 
 const inputForm = {
-    background: "#fff",
-    color: "#fff",
+    background: "#eaf3f8",
+    color: "#eaf3f8",
     display: "flex",
     alignItems: "center",
     height: "3rem",
@@ -53,6 +53,7 @@ const inputForm = {
 }
 const input = {
     width: "70%",
+    background: "#eaf3f8",
     border: "none"
 }
 
