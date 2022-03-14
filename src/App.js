@@ -24,6 +24,18 @@ class App extends React.Component {
     })
   }
 
+    addTask = data => {
+    const id = this.state.todos.length
+    const newData = {
+      id: id + 1,
+      title: data
+    }
+    // console.log("ok")
+    this.setState({
+      todos: [...this.state.todos, newData]
+    })
+  }
+
   render() {
     const{ todos } = this.state;
     return (
