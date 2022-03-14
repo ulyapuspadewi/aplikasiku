@@ -2,8 +2,10 @@
     width: 5rem;
     height: 1.7rem;
     margin: 0 0.2rem;
+    padding: 0;
     border: none;
-    color: #000;
+    color: #fff;
+    background-color: #fb2d68;
 }
 .btn:focus{
     outline: none;
