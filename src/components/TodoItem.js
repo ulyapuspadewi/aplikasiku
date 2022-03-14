@@ -5,7 +5,7 @@ import "../styles/Button.css"
 import Button from "./Button";
 
 
-const TodoItem = ({ todo, del, text, variant, action }) => {
+const TodoItem = ({ todo, del}) => {
     const delById = id => {
         del(id)
     }

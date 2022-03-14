@@ -1,20 +1,39 @@
 import React from "react";
-import { Button } from "react-bootstrap";
-// import Button from "./Button";
+// import { Button } from "react-bootstrap";
+import Button from "./Button";
 import "../styles/FormInput.css";
 
 class FormInput extends React.Component {
+    state = {
+    text: ""
+    }
+
+    change = e => {
+        this.setState({ text: e.target.value })
+    }
+
+    
+    submit = e => {
+        e.preventDefault()
+        if (this.state.text !== "") {
+            this.props.add(this.state.text)
+        }
+        this.setState({
+            text: ""
+        })
+    }
+
     render() {
         return (
-            <form style={inputForm}>
+            <form style={inputForm} onSubmit={this.submit}>
                 <input
                     type="text"
-                    // onChange={this.change}
-                    // value={this.state.text}
+                    onChange={this.change}
+                    value={this.state.text}
                     style={input}
-                    placeholder="add task"
+                    placeholder="Belanja apa hari ini?"
                 />
-                <Button text="add" variant="primary" />
+                <Button text="Tambah" variant="primary" action={this.submit}/>
             </form>
         )
     }
@@ -36,6 +55,7 @@ const input = {
     width: "70%",
     border: "none"
 }
+
 
 // import React from "react";
 // import Button from "./Button";
