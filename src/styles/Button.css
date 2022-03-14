@@ -5,13 +5,17 @@
     padding: 0;
     border: none;
     color: #fff;
-    background-color: #fb2d68;
+    background-color: #57ae4f;
+}
+.btn:hover {
+    background: #fb2d68;
+    color: #fff;
 }
 .btn:focus{
     outline: none;
 }
 .btn-success{
-    background-color: #57ae4f;
+    background-color: #303f2f;
 }
 .btn-warning{
     background-color: #fb2d68;
