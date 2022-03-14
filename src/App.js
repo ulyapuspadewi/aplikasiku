@@ -1,7 +1,7 @@
 import React from 'react';
 import FormInput from './components/FormInput';
 import TodoItem from './components/TodoItem';
-import logo from './logo.svg';
+import logo from './shop.png';
 import './App.css';
 
 class App extends React.Component {
