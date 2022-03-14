@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { Button } from "react-bootstrap";
 import "../styles/Button.css"
 import Button from "./Button";
 
@@ -22,11 +21,7 @@ const TodoItem = ({ todo, del}) => {
 
 TodoItem.propTypes = {
     todo: PropTypes.object.isRequired,
-    del: PropTypes.func.isRequired,
-
-    // text: PropTypes.string.isRequired,
-    // variant: PropTypes.string.isRequired,
-    // action: PropTypes.func
+    del: PropTypes.func.isRequired
 }
 
 export default TodoItem;
